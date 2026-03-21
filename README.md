@@ -1,4 +1,3 @@
-# ReactNative
 
 npx create-expo-app mobileApp --template
 npx expo install react-native-web react-dom @expo/metro-runtime
