@@ -8,6 +8,7 @@ npx expo start --tunnel
 npm install expo@^54.0.0
 npx expo install --fix
 npx expo-doctor
+npx expo install react-native-gesture-handler
 # if duplicated dependencies
 npm why react-native
 npm dedupe
