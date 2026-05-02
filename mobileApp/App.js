@@ -10,6 +10,7 @@ import HobbiesScreen from './screens/HobbiesScreen';
 import ButtonScreen from './screens/ButtonScreen';
 import StudentsScreen from './screens/StudentsScreen';
 import MenuScreen from './screens/MenuScreens';
+import ProjectScreen from './screens/ProjectScreen';
 import ProfileScreen from './screens/ProfileScreen';
 
 

@@ -1,48 +1,89 @@
-import React from "react";  
-import {Text, Image, View, StyleSheet} from "react-native";
+import React from "react";
+import { View, Text, Image, TouchableOpacity, StyleSheet, FlatList, Touchable } from "react-native";
 
-const Projects = (props) => {
-    return(
-        <View style={styles.container}>
-                <View style={styles.imgWrapper}>
-                    <Text style={styles.name}>{props.name}</Text>
-                </View>
-                <View style={styles.infoWrapper}>
-                    <Image source={props.image} style={styles.img}/>
-                    
-                    <Text style={styles.position}>{props.position}</Text>
-                    <Text>{props.description}</Text>
-                </View>
+export const projectImages = [
+    {id: '1', image: require('../assets/project1.jpg')},
+    {id: '2', image: require('../assets/project2.png')},
+    {id: '3', image: require('../assets/project3.png')},
+    {id: '4', image: require('../assets/project4.png')},
+    {id: '5', image: require('../assets/project5.png')},
+    {id: '6', image: require('../assets/project6.jpg')},
+];
+
+const Projects = ({onViewAll}) => {
+    const renderProject = ({item}) => (
+        <View style={styles.projectCard}>
+            <Image source={item.image} style={styles.projectImages} />
         </View>
-        
+    );
+    return (
+        <View style={styles.container}>
+            <View style={styles.header}>
+                <Text style={styles.title}>PROJECTS</Text>
+                <TouchableOpacity onPress={onViewAll}>
+                    <Text style={styles.viewAll}>View All</Text>
+                </TouchableOpacity>
+            </View>
+            <FlatList
+                data={projectImages}
+                keyExtractor={(item) => item.id}
+                horizontal={true}
+                nestedScrollEnabled
+                scrollEnabled
+                showsHorizontalScrollIndicator={false}
+                contentContainerStyle={styles.projectContainer}
+                renderItem={renderProject}
+            />
+        </View>
     )
 }
 
 const styles = StyleSheet.create({
-    container:{
-        flexDirection:"column"
+    container: {
+        marginTop: 6,
+        marginBottom: 20,
+        paddingHorizontal: 18,
     },
-    cardWrapper: {
-        flexDirection: 'column',
-        backgroundColor: 'white',
-        borderBottomRightRadius: 8,
-        borderBottomLeftRadius: 8,
-        alignSelf: 'center',
+    header:{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 15
     },
-    img:{
-        width: 100,
-        height: 100,
-    },
-    infoWrapper: {
-        marginLeft: 20,
-        marginTop: 20,
-    },
-    name:{
+    title: {
+        fontSize:34,
         fontWeight: 'bold',
+        color: '#161616',
     },
-    position: {
-        fontWeight: 'bold',
+    viewAll:{
+        fontSize: 31,
+        color: '#fff',
+        backgroundColor: '#ffd400',
+        paddingVertical:8,
+        paddingHorizontal:20,
+        borderRadius:22,
+        fontWeight: '600',
+        overflow: 'hidden'
+    },
+    projectContainer:{
+        paddingRight: 6
+    },
+    projectCard:{
+        width: 170,
+        borderRadius: 16,
+        overflow: 'hidden',
+        marginRight: 14,
+        shadowColor: '#000',
+        shadowOffset: {width:0, height:2},
+        shadowOpacity:0.08,
+        shadowRadius: 4,
+        elevation: 3
+    },
+    projectImages:{
+        width: '100%',
+        height: 190,
+        borderRadius:16
     }
-});
+})
 
-export default StudentDetails;
+export default Projects;

@@ -1,98 +1,90 @@
 import React from "react";
-import { Text, Image, View, StyleSheet, Button, TouchableOpacity } from "react-native";
+import {View, Text, Image, TouchableOpacity, StyleSheet} from 'react-native';
+import ProjectScreen from "../screens/ProjectScreen";
 
-const ProfileInfo = ({ image, fullname, position, description, projects }) => {
-  return (
+const ProfileInfo = ({name, position, description, profileImage}) => {
+  return(
     <View style={styles.container}>
-      <View style={styles.cardWrapper}>
-        <View style={styles.imgWrapper}>
-          <Image
-            source={image}
-            style={styles.img}
-            resizeMode="cover"
-          />
+        <View style={styles.heroSection}>
+          <Image source={profileImage} style={styles.profileImage}/>
         </View>
 
-        <View style={styles.infoWrapper}>
-          <Text style={styles.fullname}>{fullname}</Text>
+        <View style={styles.cardContent}>
+          <Text style={styles.fullname}>{name}</Text>
           <Text style={styles.position}>{position}</Text>
           <Text style={styles.description}>{description}</Text>
-          <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>Hire Him</Text>
-            </TouchableOpacity>
+          <TouchableOpacity style={styles.hireButton}>
+            <Text style={styles.hireButtonTxt}>HIRE ME</Text>
+          </TouchableOpacity>
         </View>
-      </View>
+
+
     </View>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
-  container: {
-    width: "30%",
-    alignSelf: "center",
-    
-  },
-  cardWrapper: {
-    backgroundColor: "white",
-    alignSelf: "center",
-    overflow: "hidden",
-    height: "200%"
-  },
-  imgWrapper: {
-    backgroundColor: "lightblue",
-    width: "100%",
-    height: "31%",
-    borderBottomLeftRadius: 30,
-    borderBottomRightRadius: 30,
-    justifyContent: "center",
-    alignItems: "center",
-    alignSelf: "center"
-  },
-  img: {
-    width: "70%",
-    height: 335,
-    marginTop: 80,
-  },
-  infoWrapper: {
-    backgroundColor: "white",
-    borderRadius: 20,
-    borderWidth: 2,
-    borderColor: "grey",
-    marginHorizontal: 20,
-    position: "static",
-    marginTop: -50,
-    width: "80%",
-    height: "20%",
-    alignSelf: "center",
-    alignItems: "center",
-    justifyContent: "center"
-  },
-  fullname: {
-    fontWeight: "bold",
-    marginBottom: 5,
-  },
-  position: {
-    fontWeight: "bold",
-    marginBottom: 10,
-  },
-  description: {
-    textAlign: "center",
-  },
-  button: {
-    backgroundColor: "#FFD700", // nice gold/yellow
-    paddingVertical: 10,
-    paddingHorizontal: 20,
-    borderRadius: 30,
-    marginTop: 10,
-    marginBottom: 10
-  },
+    container: {
+      marginBottom: 18,
+    },
+    heroSection: {
+      height: 335,
+      borderBottomLeftRadius: 36,
+      borderBottomRightRadius: 36,
+      backgrounColor: '#6CC5E6',
+      justifyContent: 'flex-end',
+      alignItems: 'center',
+      overflow: 'hidden',
+    },
+    profileImage: {
+      width: '78%',
+      height: '78%',
+      resizeMode: 'contain',
+    },
+    cardContent: {
+      marginTop: -48,
+      marginHorizontal: 24,
+      borderRadius: 24,
+      backgrounColor: '#f3f3f3',
+      paddingHorizontal: 24,
+      paddingVertical: 24,
+      alignItems: 'center',
+      shadowColor: '#000',
+      shadowOffset: {width:0, height:2},
+      shadowOpacity:0.08,
+      shadowRadius: 6,
+      elevation: 4,
+    },
+    fullname: {
+      fontSize: 42,
+      fontWeight: 'bold',
+      color: '#101010',
+      marginBottom: 10,
+    },
+    position: {
+      fontSize: 20,
+      color: '#4f4f4f',
+      marginBottom: 10,
+    },
+    description: {
+      fontSize: 17,
+      color: '#2d2d2d',
+      marginBottom: 16,
+      lineHeight: 25,
+      textAlign: 'center'
+    },
+    hireButton: {
+      backgrounColor: '#ffd400',
+      paddingVertical: 14,
+      paddingHorizontal: 28,
+      borderRadius: 28
+    },
+    hireButtonTxt: {
+      color: '#fff',
+      fontWeight: 'bold',
+      fontSize: 23,
+    }
 
-  buttonText: {
-    color: "white",
-    fontSize: 15,
-    fontWeight: "bold",
-    textAlign: "center",
-  }
-});
+})
 
 export default ProfileInfo;
