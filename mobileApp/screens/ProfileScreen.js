@@ -21,7 +21,7 @@ const ProfileScreen = ({navigation}) => {
                         name="John Doe"
                         position="UI/UX Designer"
                         description= "We're passionte about creating beauful desgins for startups & leading brands"
-                        profileImage = {require("../assets/avatar1.png")}/>
+                        profileImage = {require("../assets/avatar1.jpg")}/>
                     )
                 }
                 return (

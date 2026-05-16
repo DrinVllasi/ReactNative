@@ -43,7 +43,6 @@ const styles = StyleSheet.create({
     projectCard: {
         flex: 1,
         borderRadius: 14,
-        overflow: hidden,
         backgroundColor: '#ffff',
         shadowColor: '#000',
         shadowOffset: {width:0, height:2},
