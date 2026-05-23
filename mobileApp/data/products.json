@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "brand": "Nike",
+    "product_name": "HyperChase",
+    "category": "Men's Basketball Shoes",
+    "price_usd": 125,
+    "primary_color": "Blue",
+    "secondary_color": "Green",
+    "accent_color": "White",
+    "description": "Lightweight basketball shoes designed for speed, grip, and comfort."
+  },
+  {
+    "id": 2,
+    "brand": "Nike",
+    "product_name": "Air Zoom Elite",
+    "category": "Men's Basketball Shoes",
+    "price_usd": 140,
+    "primary_color": "Black",
+    "secondary_color": "Red",
+    "accent_color": "White",
+    "description": "High-performance basketball shoes with responsive cushioning."
+  },
+  {
+    "id": 3,
+    "brand": "Nike",
+    "product_name": "Court Vision Pro",
+    "category": "Men's Basketball Shoes",
+    "price_usd": 135,
+    "primary_color": "White",
+    "secondary_color": "Blue",
+    "accent_color": "Silver",
+    "description": "Stylish and durable shoes made for indoor and outdoor courts."
+  },
+  {
+    "id": 4,
+    "brand": "Nike",
+    "product_name": "FlyStep X",
+    "category": "Men's Basketball Shoes",
+    "price_usd": 150,
+    "primary_color": "Gray",
+    "secondary_color": "Orange",
+    "accent_color": "Black",
+    "description": "Breathable basketball shoes with extra ankle support."
+  },
+  {
+    "id": 5,
+    "brand": "Nike",
+    "product_name": "Velocity Dunk",
+    "category": "Men's Basketball Shoes",
+    "price_usd": 145,
+    "primary_color": "Purple",
+    "secondary_color": "Yellow",
+    "accent_color": "White",
+    "description": "Dynamic court shoes built for explosive movement."
+  },
+  {
+    "id": 6,
+    "brand": "Nike",
+    "product_name": "Street Hoop Max",
+    "category": "Men's Basketball Shoes",
+    "price_usd": 130,
+    "primary_color": "Black",
+    "secondary_color": "Green",
+    "accent_color": "Gray",
+    "description": "Durable basketball sneakers designed for outdoor play."
+  },
+  {
+    "id": 7,
+    "brand": "Nike",
+    "product_name": "JumpForce One",
+    "category": "Men's Basketball Shoes",
+    "price_usd": 160,
+    "primary_color": "Red",
+    "secondary_color": "Black",
+    "accent_color": "Gold",
+    "description": "Premium basketball shoes with superior impact protection."
+  },
+  {
+    "id": 8,
+    "brand": "Nike",
+    "product_name": "Hoop Runner",
+    "category": "Men's Basketball Shoes",
+    "price_usd": 120,
+    "primary_color": "Navy",
+    "secondary_color": "Cyan",
+    "accent_color": "White",
+    "description": "Comfortable and lightweight shoes for fast-paced games."
+  },
+  {
+    "id": 9,
+    "brand": "Nike",
+    "product_name": "Court Blaze",
+    "category": "Men's Basketball Shoes",
+    "price_usd": 155,
+    "primary_color": "White",
+    "secondary_color": "Red",
+    "accent_color": "Black",
+    "description": "Modern basketball shoes with advanced traction technology."
+  },
+  {
+    "id": 10,
+    "brand": "Nike",
+    "product_name": "SkyDrive Pro",
+    "category": "Men's Basketball Shoes",
+    "price_usd": 170,
+    "primary_color": "Blue",
+    "secondary_color": "Lime",
+    "accent_color": "Black",
+    "description": "Elite-level basketball shoes optimized for agility and speed."
+  }
+]
