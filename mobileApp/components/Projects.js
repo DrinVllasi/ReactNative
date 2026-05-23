@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, TouchableOpacity, StyleSheet, FlatList, Touchable } from "react-native";
+import {View, Text, Image, TouchableOpacity, StyleSheet, FlatList} from 'react-native';
 
 export const projectImages = [
     {id: '1', image: require('../assets/project1.jpg')},
@@ -13,7 +13,7 @@ export const projectImages = [
 const Projects = ({onViewAll}) => {
     const renderProject = ({item}) => (
         <View style={styles.projectCard}>
-            <Image source={item.image} style={styles.projectImages} />
+            <Image source={item.image} style={styles.projectImage} />
         </View>
     );
     return (
@@ -24,8 +24,7 @@ const Projects = ({onViewAll}) => {
                     <Text style={styles.viewAll}>View All</Text>
                 </TouchableOpacity>
             </View>
-            <FlatList
-                data={projectImages}
+            <FlatList 
                 keyExtractor={(item) => item.id}
                 horizontal={true}
                 nestedScrollEnabled
@@ -39,51 +38,51 @@ const Projects = ({onViewAll}) => {
 }
 
 const styles = StyleSheet.create({
-    container: {
+    continer: {
         marginTop: 6,
         marginBottom: 20,
         paddingHorizontal: 18,
     },
-    header:{
+    header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
         marginBottom: 15
     },
     title: {
-        fontSize:34,
+        fontSize: 34,
         fontWeight: 'bold',
         color: '#161616',
     },
-    viewAll:{
+    viewAll: {
         fontSize: 31,
         color: '#fff',
-        backgroundColor: '#ffd400',
-        paddingVertical:8,
-        paddingHorizontal:20,
-        borderRadius:22,
+        backgroundColor: '#FFD400',
+        paddingVertical: 8,
+        paddingHorizontal: 20,
+        borderRadius: 22,
         fontWeight: '600',
         overflow: 'hidden'
     },
-    projectContainer:{
+    projectContainer: {
         paddingRight: 6
     },
-    projectCard:{
+    projectCard: {
         width: 170,
         borderRadius: 16,
         overflow: 'hidden',
         marginRight: 14,
         shadowColor: '#000',
-        shadowOffset: {width:0, height:2},
-        shadowOpacity:0.08,
+        shadowOffset: {width: 0, height: 2},
+        shadowOpacity: 0.08,
         shadowRadius: 4,
         elevation: 3
     },
-    projectImages:{
+    projectImage: {
         width: '100%',
         height: 190,
-        borderRadius:16
+        borderRadius: 16
     }
 })
 
-export default Projects;
+export default Projects
