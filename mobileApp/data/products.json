@@ -1,112 +1,92 @@
 [
   {
     "id": 1,
-    "brand": "Nike",
-    "product_name": "HyperChase",
+    "name": "Nike Hyperchase",
     "category": "Men's Basketball Shoes",
-    "price_usd": 125,
-    "primary_color": "Blue",
-    "secondary_color": "Green",
-    "accent_color": "White",
-    "description": "Lightweight basketball shoes designed for speed, grip, and comfort."
+    "price": 125,
+    "stock": 48,
+    "image": "https://picsum.photos/id/1015/600/400",
+    "description": "Bold and dynamic men's basketball shoes featuring a striking blue and green colorway with excellent cushioning and court traction."
   },
   {
     "id": 2,
-    "brand": "Nike",
-    "product_name": "Air Zoom Elite",
+    "name": "Nike LeBron XXI",
     "category": "Men's Basketball Shoes",
-    "price_usd": 140,
-    "primary_color": "Black",
-    "secondary_color": "Red",
-    "accent_color": "White",
-    "description": "High-performance basketball shoes with responsive cushioning."
+    "price": 210,
+    "stock": 32,
+    "image": "https://picsum.photos/id/1060/600/400",
+    "description": "LeBron James signature shoe with advanced Zoom Air cushioning and maximum support for elite performance."
   },
   {
     "id": 3,
-    "brand": "Nike",
-    "product_name": "Court Vision Pro",
+    "name": "Adidas Harden Vol. 8",
     "category": "Men's Basketball Shoes",
-    "price_usd": 135,
-    "primary_color": "White",
-    "secondary_color": "Blue",
-    "accent_color": "Silver",
-    "description": "Stylish and durable shoes made for indoor and outdoor courts."
+    "price": 160,
+    "stock": 65,
+    "image": "https://picsum.photos/id/1077/600/400",
+    "description": "James Harden signature model designed for quick cuts and explosive movement on the court."
   },
   {
     "id": 4,
-    "brand": "Nike",
-    "product_name": "FlyStep X",
+    "name": "Nike Kyrie Infinity",
     "category": "Men's Basketball Shoes",
-    "price_usd": 150,
-    "primary_color": "Gray",
-    "secondary_color": "Orange",
-    "accent_color": "Black",
-    "description": "Breathable basketball shoes with extra ankle support."
+    "price": 130,
+    "stock": 41,
+    "image": "https://picsum.photos/id/1080/600/400",
+    "description": "Kyrie Irving signature shoe built for agility, control, and incredible traction."
   },
   {
     "id": 5,
-    "brand": "Nike",
-    "product_name": "Velocity Dunk",
+    "name": "Under Armour Curry 12",
     "category": "Men's Basketball Shoes",
-    "price_usd": 145,
-    "primary_color": "Purple",
-    "secondary_color": "Yellow",
-    "accent_color": "White",
-    "description": "Dynamic court shoes built for explosive movement."
+    "price": 150,
+    "stock": 28,
+    "image": "https://picsum.photos/id/133/600/400",
+    "description": "Stephen Curry's latest signature shoe with lightweight design and excellent court feel."
   },
   {
     "id": 6,
-    "brand": "Nike",
-    "product_name": "Street Hoop Max",
+    "name": "Nike Giannis Immortality 3",
     "category": "Men's Basketball Shoes",
-    "price_usd": 130,
-    "primary_color": "Black",
-    "secondary_color": "Green",
-    "accent_color": "Gray",
-    "description": "Durable basketball sneakers designed for outdoor play."
+    "price": 85,
+    "stock": 73,
+    "image": "https://picsum.photos/id/201/600/400",
+    "description": "Giannis Antetokounmpo inspired shoes offering great value with solid performance."
   },
   {
     "id": 7,
-    "brand": "Nike",
-    "product_name": "JumpForce One",
+    "name": "Jordan Luka 3",
     "category": "Men's Basketball Shoes",
-    "price_usd": 160,
-    "primary_color": "Red",
-    "secondary_color": "Black",
-    "accent_color": "Gold",
-    "description": "Premium basketball shoes with superior impact protection."
+    "price": 135,
+    "stock": 39,
+    "image": "https://picsum.photos/id/251/600/400",
+    "description": "Luka Doncic signature Jordan basketball shoes with premium cushioning."
   },
   {
     "id": 8,
-    "brand": "Nike",
-    "product_name": "Hoop Runner",
+    "name": "Nike Zoom GT Cut 3",
     "category": "Men's Basketball Shoes",
-    "price_usd": 120,
-    "primary_color": "Navy",
-    "secondary_color": "Cyan",
-    "accent_color": "White",
-    "description": "Comfortable and lightweight shoes for fast-paced games."
+    "price": 175,
+    "stock": 22,
+    "image": "https://picsum.photos/id/292/600/400",
+    "description": "High-performance basketball shoes engineered for speed and quick directional changes."
   },
   {
     "id": 9,
-    "brand": "Nike",
-    "product_name": "Court Blaze",
+    "name": "Puma MB.03",
     "category": "Men's Basketball Shoes",
-    "price_usd": 155,
-    "primary_color": "White",
-    "secondary_color": "Red",
-    "accent_color": "Black",
-    "description": "Modern basketball shoes with advanced traction technology."
+    "price": 125,
+    "stock": 56,
+    "image": "https://picsum.photos/id/367/600/400",
+    "description": "LaMelo Ball signature Puma basketball shoes with vibrant design and strong support."
   },
   {
     "id": 10,
-    "brand": "Nike",
-    "product_name": "SkyDrive Pro",
-    "category": "Men's Basketball Shoes",
-    "price_usd": 170,
-    "primary_color": "Blue",
-    "secondary_color": "Lime",
-    "accent_color": "Black",
-    "description": "Elite-level basketball shoes optimized for agility and speed."
+    "name": "Nike Air Force 1 Low",
+    "category": "Men's Lifestyle Shoes",
+    "price": 115,
+    "stock": 89,
+    "image": "https://picsum.photos/id/431/600/400",
+    "description": "Classic and timeless basketball-inspired lifestyle sneakers. A streetwear essential."
   }
 ]

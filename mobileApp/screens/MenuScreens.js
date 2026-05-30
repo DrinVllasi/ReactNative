@@ -35,6 +35,10 @@ const MenuScreen = (props) => {
                 onPress={() => props.navigation.navigate('Comments')}>
                 <Text style={styles.btnText}>Go to Comments Screen</Text>
             </TouchableOpacity>
+            <Button
+                title="Go to Products screen"
+                onPress ={()=>props.navigation.navigate('Products')}
+            />
         </View>
     );
 };

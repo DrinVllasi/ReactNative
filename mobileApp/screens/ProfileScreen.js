@@ -4,7 +4,7 @@ import {FlatList, StyleSheet} from 'react-native';
 
 const ProfileScreen = ({navigation}) => {
     const sections = [
-        {id: 'prfile'},
+        {id: 'profile'},
         {id: 'projects'},
     ];
     return (
