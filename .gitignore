@@ -1,0 +1,54 @@
+# Root .gitignore for the workspace
+# See https://github.com/github/gitignore for templates
+
+# Node
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# React Native / Native
+/ios/
+/android/
+.gradle/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+.cocoapods/
+Pods/
+
+# Metro
+.metro-health-check*
+
+# Environment
+.env
+.env.*
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# macOS
+.DS_Store
+
+# Certificates and keys
+*.pem
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+*.log
