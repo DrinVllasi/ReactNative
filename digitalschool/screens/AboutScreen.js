@@ -1,13 +1,20 @@
-import React from "react"; 
+import React, {useCallback} from "react"; 
 import {View, Text, StyleSheet, Button} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 const AboutScreen = (navigation) => {
+    const navigation = useNavigation();
+
+    const goHome = useCallback(() => {
+        navigation.navigate('Home');
+    }, [navigation]);
+
     return(
         <View>
             <Text>Welcome to About Screen</Text>
             <Button 
                 title="Go to Home Screen"
-                onPress={() => navigation.navigate('Home')}
+                onPress={goHome}
             ></Button>
         </View>
     )
@@ -22,4 +29,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default HomeScreen;
+export default AboutScreen;
