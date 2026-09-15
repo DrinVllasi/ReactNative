@@ -13,7 +13,7 @@ const Home =() => {
                 >
                     <View style={styles.item}>
                         <Image
-                        source={require('../assets/ds.png')}
+                        source={require('../assets/avatar1.jpg')}
                         style={styles.imgItem}
                         resizeMode='cover'
                         />
@@ -21,7 +21,7 @@ const Home =() => {
 
                     <View style={styles.item}>
                         <Image
-                        source={require('../assets/ds1.png')}
+                        source={require('../assets/avatar2.png')}
                         style={styles.imgItem}
                         resizeMode='cover'
                         />
@@ -29,7 +29,7 @@ const Home =() => {
 
                     <View style={styles.item}>
                         <Image
-                        source={require('../assets/ds2.png')}
+                        source={require('../assets/avatar3.jpg')}
                         style={styles.imgItem}
                         resizeMode='cover'
                         />

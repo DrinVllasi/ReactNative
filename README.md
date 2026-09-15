@@ -1,7 +1,7 @@
 # ReactNative11D
 
 
-npx create-expo-app mobileApp --template
+<!-- npx create-expo-app mobileApp --template
 npx expo install react-native-web react-dom @expo/metro-runtime
 npm install @expo/ngrok
 npm install @react-navigation/native @react-navigation/stack
@@ -16,4 +16,11 @@ npx expo-doctor
 # if duplicated dependencies
 npm why react-native
 npm dedupe
-npx expo-doctor
+npx expo-doctor -->
+
+
+<!-- New Commands -->
+
+npx create-expo-app app-name --template
+cd app-name
+npx expo install react-native-web-react-dom @expo/metro-runtime
