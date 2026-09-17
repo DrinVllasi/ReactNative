@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "View",
+    "image": "https://reactnative.dev/img/header_logo.svg",
+    "desc": "The most fundamental component for building UI, supporting layout with flexbox, styling, touch handling, and accessibility controls."
+  },
+  {
+    "id": 2,
+    "name": "Text",
+    "image": "https://reactnative.dev/img/header_logo.svg",
+    "desc": "A component designed for displaying text that supports nesting, styling, and touch handling."
+  },
+  {
+    "id": 3,
+    "name": "Image",
+    "image": "https://reactnative.dev/img/header_logo.svg",
+    "desc": "A React component for displaying different types of images, including network images, static resources, and temporary local images."
+  },
+  {
+    "id": 4,
+    "name": "ScrollView",
+    "image": "https://reactnative.dev/img/header_logo.svg",
+    "desc": "A generic scrolling container that can contain multiple components and views, supporting both vertical and horizontal scrolling."
+  }
+]
