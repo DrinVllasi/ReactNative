@@ -4,26 +4,39 @@ import data from '../assets/data.json';
 
 const Icons = () => {
     const renderItem = ({ item }) => (
-        <View style={styles.card}>
+        <View style={styles.rowItem}>
             <Image 
-                source={{ uri: 'https://reactnative.dev/img/tiny_logo.png' }} 
+                source={{ uri: item.image }} 
                 style={styles.image} 
             />
             <View style={styles.textContainer}>
                 <Text style={styles.name}>{item.name}</Text>
-                <Text style={styles.desc}>{item.desc}</Text>
+                
+                {/* 1. Stock / Category Badge */}
+                <View style={styles.badge}>
+                    <Text style={styles.badgeText}>IN STOCK</Text>
+                </View>
+
+                <Text style={styles.desc} numberOfLines={2}>{item.desc}</Text>
             </View>
+
+            {/* 2. Interactive Chevron Arrow */}
+            <Text style={styles.chevron}>›</Text>
         </View>
     );
 
     return (
         <View style={styles.container}>
-            <Text style={styles.headerTitle}>Component List</Text>
+            <View style={styles.headerBox}>
+                <Text style={styles.headerTitle}>COLLECTION</Text>
+                <Text style={styles.headerSubtitle}>Latest releases</Text>
+            </View>
             <FlatList
                 data={data}
                 keyExtractor={(item) => item.id.toString()}
                 renderItem={renderItem}
                 showsVerticalScrollIndicator={false}
+                ItemSeparatorComponent={() => <View style={styles.divider} />}
             />
         </View>
     );
@@ -32,49 +45,83 @@ const Icons = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#f5f5f5',
-        paddingHorizontal: 20,
-        paddingTop: 20,
+        backgroundColor: '#FFFFFF',
+        paddingHorizontal: 24,
+        paddingTop: 40,
+    },
+    headerBox: {
+        marginBottom: 30,
+        borderBottomWidth: 2,
+        borderBottomColor: '#000000',
+        paddingBottom: 15,
     },
     headerTitle: {
-        fontSize: 22,
-        fontWeight: 'bold',
-        marginBottom: 15,
-        textAlign: 'center',
-        color: '#333',
+        fontSize: 28,
+        fontWeight: '900',
+        color: '#000000',
+        letterSpacing: -0.5,
     },
-    card: {
-        backgroundColor: 'white',
+    headerSubtitle: {
+        fontSize: 14,
+        fontWeight: '500',
+        color: '#666666',
+        marginTop: 4,
+        textTransform: 'uppercase',
+        letterSpacing: 1,
+    },
+    rowItem: {
         flexDirection: 'row',
-        padding: 15,
-        borderRadius: 8,
-        marginBottom: 15,
+        paddingVertical: 20,
         alignItems: 'center',
-        shadowColor: '#000',
-        shadowOffset: { width: 0, height: 1 },
-        shadowOpacity: 0.2,
-        shadowRadius: 1.41,
-        elevation: 2,
     },
     image: {
-        width: 50,
-        height: 50,
-        marginRight: 15,
+        width: 110,
+        height: 110,
+        marginRight: 18,
+        borderRadius: 14,
+        backgroundColor: '#F8F9FA',
         resizeMode: 'contain',
     },
     textContainer: {
         flex: 1,
+        justifyContent: 'center',
     },
     name: {
-        fontSize: 16,
-        fontWeight: 'bold',
-        color: '#222',
+        fontSize: 18,
+        fontWeight: '700',
+        color: '#111111',
         marginBottom: 4,
+        letterSpacing: -0.3,
+    },
+    badge: {
+        alignSelf: 'flex-start',
+        backgroundColor: '#F1F3F5',
+        paddingHorizontal: 8,
+        paddingVertical: 3,
+        borderRadius: 6,
+        marginBottom: 6,
+    },
+    badgeText: {
+        fontSize: 10,
+        fontWeight: '700',
+        color: '#333333',
+        letterSpacing: 0.5,
     },
     desc: {
         fontSize: 13,
-        color: '#666',
+        color: '#555555',
         lineHeight: 18,
+    },
+    chevron: {
+        fontSize: 22,
+        color: '#C7C7CC',
+        marginLeft: 12,
+        fontWeight: '300',
+    },
+    divider: {
+        height: 1,
+        backgroundColor: '#a7a7a7',
+        width: '100%',
     },
 });
 

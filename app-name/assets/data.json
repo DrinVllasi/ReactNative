@@ -1,26 +1,44 @@
 [
   {
     "id": 1,
-    "name": "View",
-    "image": "https://reactnative.dev/img/header_logo.svg",
-    "desc": "The most fundamental component for building UI, supporting layout with flexbox, styling, touch handling, and accessibility controls."
+    "name": "Flagship Smartphone X",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&auto=format&fit=crop&q=60",
+    "desc": "A cutting-edge smartphone featuring a stunning OLED display, pro-grade triple camera system, and all-day battery life."
   },
   {
     "id": 2,
-    "name": "Text",
-    "image": "https://reactnative.dev/img/header_logo.svg",
-    "desc": "A component designed for displaying text that supports nesting, styling, and touch handling."
+    "name": "Wireless Earbuds Pro",
+    "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=500&auto=format&fit=crop&q=60",
+    "desc": "Immersive sound with active noise cancellation, comfortable ergonomic fit, and seamless pairing with your devices."
   },
   {
     "id": 3,
-    "name": "Image",
-    "image": "https://reactnative.dev/img/header_logo.svg",
-    "desc": "A React component for displaying different types of images, including network images, static resources, and temporary local images."
+    "name": "Smartwatch Series 5",
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60",
+    "desc": "Track your fitness goals, monitor heart rate, and receive notifications right on your wrist with a vibrant touch display."
   },
   {
     "id": 4,
-    "name": "ScrollView",
-    "image": "https://reactnative.dev/img/header_logo.svg",
-    "desc": "A generic scrolling container that can contain multiple components and views, supporting both vertical and horizontal scrolling."
+    "name": "Fast Wireless Charger",
+    "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=500&auto=format&fit=crop&q=60",
+    "desc": "Power up your devices quickly and safely with Qi-certified high-speed wireless charging technology."
+  },
+  {
+    "id": 5,
+    "name": "Portable Power Bank",
+    "image": "https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=500&auto=format&fit=crop&q=60",
+    "desc": "High-capacity external battery pack with fast USB-C power delivery to keep your gear charged on the go."
+  },
+  {
+    "id": 6,
+    "name": "Bluetooth Speaker",
+    "image": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500&auto=format&fit=crop&q=60",
+    "desc": "Rugged, water-resistant portable speaker delivering rich 360-degree sound and deep bass anywhere you travel."
+  },
+  {
+    "id": 7,
+    "name": "Noise-Canceling Headphones",
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=60",
+    "desc": "Over-ear studio-quality audio with advanced hybrid noise-canceling technology and plush memory foam ear cushions."
   }
 ]

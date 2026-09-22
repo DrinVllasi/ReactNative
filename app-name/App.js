@@ -7,7 +7,6 @@ import Icon from './components/Icon';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Home/>
       <Icons />
       <StatusBar style="auto" />
     </View>
