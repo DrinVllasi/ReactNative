@@ -2,11 +2,13 @@ import React from 'react';
 import { View, Text, StyleSheet, Button, Image } from 'react-native';
 import Swiper from 'react-native-swiper';
 import Icon from '../components/Icon';
+import { TouchableOpacity } from 'react-native';
+import { FlatList } from 'react-native';
 
 const Home = () => {
     return(
         <View style={styles.container}>
-            {/* <View style={styles.sliderContainer}>
+            <View style={styles.sliderContainer}>
                 <Swiper
                     autoplay
                     activeDotColor="#22D4FF"
@@ -42,10 +44,14 @@ const Home = () => {
                     </View>
                    
                 </Swiper>
-            </View> */}
+            </View>
             <View style={styles.iconsContainer} >
-                <Icon name="iphone" iconText="apple" />
-                <Icon name="android" iconText="Samsung" />
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Ios')}>
+                    <Icon name="cellphone" iconText="iOS" />
+                </TouchableOpacity>
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Android')}>
+                    <Icon name="android" iconText="Android" />
+                </TouchableOpacity>
                 <Icon name="laptop" iconText="Laptop" />
 
             </View>
@@ -53,12 +59,26 @@ const Home = () => {
              <Icon name="tablet" iconText="Tablet" />
              <Icon name="mouse" iconText="Mouse" />
              <Icon name="keyboard-outline" iconText="Keyboard" />
-
-
             </View>
 
-            
+            <View style={styles.productsContainer}>
+                <Text style={styles.title}>Most popular products</Text>
+
+                <FlatList
+                    data={this.state.products.popularproducts}
+                    renderItem = {({item}) => (
+                        <View> 
+                            <Item item={item} />
+                        </View>
+                    )}
+                />
+
+                <TouchableOpacity style={styles.btn}>
+                    <Text style={styles.btnText}>View More</Text>
+                </TouchableOpacity>
+            </View>
         </View>
+
     );
 }
 
